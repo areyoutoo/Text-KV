@@ -1,0 +1,15 @@
+Revision history for Text::KV.
+
+0.02 2014-01-14
+
+	- Feature: print & print_stdout now support all get_*, parse_* data types.
+	- Docs: 100% pod coverage.
+	- Build: Build.PL lists test dependencies (which are pretty vanilla).
+	- Testing: Significantly improved build testing.
+	- Fixed: get_all_pairs returns arrayref.
+	- Fixed: kv_separator and rec_separator may contain regex metacharacters.
+	- Fixed: print_stdout had an incorrect method call to 'print_fh'.
+
+0.01 2014-01-10
+
+	- Initial build.

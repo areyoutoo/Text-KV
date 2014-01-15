@@ -1,0 +1,13 @@
+.gitattributes
+Build.PL
+Changes
+lib/Text/KV.pm
+MANIFEST			This list of files
+t/00_compile.t
+t/01_new.t
+t/10_pairs.t
+t/11_recs.t
+t/12_comments.t
+t/20_filehandles.t
+t/30_empty.t
+t/40_print.t
