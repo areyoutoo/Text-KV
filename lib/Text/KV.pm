@@ -5,7 +5,7 @@ use warnings;
 
 use Carp;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 #################
 ## CONSTRUCTOR ##
@@ -225,7 +225,7 @@ sub get_all_merge {
     my %merge;
     while (my $line = $self->_next_line($io)) {
     	my $temp = $self->parse_line_merge($line);
-    	for my $key (keys $temp) {
+    	for my $key (keys %$temp) {
     		$merge{$key} = $temp->{$key} if $overwrite || !exists $merge{$key};
     	}
     }
